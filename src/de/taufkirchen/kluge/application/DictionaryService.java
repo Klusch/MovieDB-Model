@@ -1,4 +1,4 @@
-package moviedb_model;
+package de.taufkirchen.kluge.application;
 
 public interface DictionaryService {
 	

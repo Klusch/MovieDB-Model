@@ -1,4 +1,4 @@
-package moviedb_model;
+package de.taufkirchen.kluge.application;
 
 import java.util.ArrayList;
 import java.util.Arrays;
