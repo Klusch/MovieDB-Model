@@ -84,6 +84,53 @@ public interface MovieDBPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link de.taufkirchen.kluge.MovieDB.impl.MoviesImpl <em>Movies</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.taufkirchen.kluge.MovieDB.impl.MoviesImpl
+	 * @see de.taufkirchen.kluge.MovieDB.impl.MovieDBPackageImpl#getMovies()
+	 * @generated
+	 */
+	int MOVIES = 1;
+
+	/**
+	 * The feature id for the '<em><b>ID</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOVIES__ID = 0;
+
+	/**
+	 * The feature id for the '<em><b>Title</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOVIES__TITLE = 1;
+
+	/**
+	 * The feature id for the '<em><b>Three D</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOVIES__THREE_D = 2;
+
+	/**
+	 * The number of structural features of the '<em>Movies</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOVIES_FEATURE_COUNT = 3;
+
+
+	/**
 	 * Returns the meta object for class '{@link de.taufkirchen.kluge.MovieDB.Series <em>Series</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -103,6 +150,49 @@ public interface MovieDBPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getSeries_ID();
+
+	/**
+	 * Returns the meta object for class '{@link de.taufkirchen.kluge.MovieDB.Movies <em>Movies</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Movies</em>'.
+	 * @see de.taufkirchen.kluge.MovieDB.Movies
+	 * @generated
+	 */
+	EClass getMovies();
+
+	/**
+	 * Returns the meta object for the attribute '{@link de.taufkirchen.kluge.MovieDB.Movies#getID <em>ID</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>ID</em>'.
+	 * @see de.taufkirchen.kluge.MovieDB.Movies#getID()
+	 * @see #getMovies()
+	 * @generated
+	 */
+	EAttribute getMovies_ID();
+
+	/**
+	 * Returns the meta object for the attribute '{@link de.taufkirchen.kluge.MovieDB.Movies#getTitle <em>Title</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Title</em>'.
+	 * @see de.taufkirchen.kluge.MovieDB.Movies#getTitle()
+	 * @see #getMovies()
+	 * @generated
+	 */
+	EAttribute getMovies_Title();
+
+	/**
+	 * Returns the meta object for the attribute '{@link de.taufkirchen.kluge.MovieDB.Movies#getThreeD <em>Three D</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Three D</em>'.
+	 * @see de.taufkirchen.kluge.MovieDB.Movies#getThreeD()
+	 * @see #getMovies()
+	 * @generated
+	 */
+	EAttribute getMovies_ThreeD();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -143,6 +233,40 @@ public interface MovieDBPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute SERIES__ID = eINSTANCE.getSeries_ID();
+
+		/**
+		 * The meta object literal for the '{@link de.taufkirchen.kluge.MovieDB.impl.MoviesImpl <em>Movies</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.taufkirchen.kluge.MovieDB.impl.MoviesImpl
+		 * @see de.taufkirchen.kluge.MovieDB.impl.MovieDBPackageImpl#getMovies()
+		 * @generated
+		 */
+		EClass MOVIES = eINSTANCE.getMovies();
+
+		/**
+		 * The meta object literal for the '<em><b>ID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MOVIES__ID = eINSTANCE.getMovies_ID();
+
+		/**
+		 * The meta object literal for the '<em><b>Title</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MOVIES__TITLE = eINSTANCE.getMovies_Title();
+
+		/**
+		 * The meta object literal for the '<em><b>Three D</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MOVIES__THREE_D = eINSTANCE.getMovies_ThreeD();
 
 	}
 

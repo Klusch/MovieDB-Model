@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- Connection with Oracle
+        <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:orcl</property>
+        <property name=“hibernate.connection.username”>user</property>
+        <property name=“hibernate.connection.password”>pass</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>    
+         -->
+    
+        <!-- Connection with Oracle and Glassfish
+        <property name=“hibernate.connection.datasource”>jdbc/Oracle</property>
+        <property name=“hibernate.jndi.url”>jdbc/Oracle</property>
+        <property name="hibernate.transaction.jndi.class">oracle.jdbc.pool.OracleDataSource</property>
+         -->
+    
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost/moviedb</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <property name=“hibernate.connection.username”>kluge</property>
+        <property name=“hibernate.connection.password”>pass</property>
+        
+        <mapping resource="de/taufkirchen/kluge/resources/Series.hbm.xml"/>
+        <mapping resource="de/taufkirchen/kluge/resources/Movies.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>

@@ -4,6 +4,7 @@ package de.taufkirchen.kluge.MovieDB.impl;
 
 import de.taufkirchen.kluge.MovieDB.MovieDBFactory;
 import de.taufkirchen.kluge.MovieDB.MovieDBPackage;
+import de.taufkirchen.kluge.MovieDB.Movies;
 import de.taufkirchen.kluge.MovieDB.Series;
 
 import org.eclipse.emf.ecore.EAttribute;
@@ -25,6 +26,13 @@ public class MovieDBPackageImpl extends EPackageImpl implements MovieDBPackage {
 	 * @generated
 	 */
 	private EClass seriesEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass moviesEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -110,6 +118,42 @@ public class MovieDBPackageImpl extends EPackageImpl implements MovieDBPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getMovies() {
+		return moviesEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getMovies_ID() {
+		return (EAttribute)moviesEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getMovies_Title() {
+		return (EAttribute)moviesEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getMovies_ThreeD() {
+		return (EAttribute)moviesEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public MovieDBFactory getMovieDBFactory() {
 		return (MovieDBFactory)getEFactoryInstance();
 	}
@@ -135,6 +179,11 @@ public class MovieDBPackageImpl extends EPackageImpl implements MovieDBPackage {
 		// Create classes and their features
 		seriesEClass = createEClass(SERIES);
 		createEAttribute(seriesEClass, SERIES__ID);
+
+		moviesEClass = createEClass(MOVIES);
+		createEAttribute(moviesEClass, MOVIES__ID);
+		createEAttribute(moviesEClass, MOVIES__TITLE);
+		createEAttribute(moviesEClass, MOVIES__THREE_D);
 	}
 
 	/**
@@ -169,6 +218,11 @@ public class MovieDBPackageImpl extends EPackageImpl implements MovieDBPackage {
 		// Initialize classes and features; add operations and parameters
 		initEClass(seriesEClass, Series.class, "Series", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSeries_ID(), ecorePackage.getEIntegerObject(), "ID", null, 0, 1, Series.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(moviesEClass, Movies.class, "Movies", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getMovies_ID(), ecorePackage.getEIntegerObject(), "ID", null, 0, 1, Movies.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMovies_Title(), ecorePackage.getEString(), "Title", null, 0, 1, Movies.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMovies_ThreeD(), ecorePackage.getEBooleanObject(), "ThreeD", null, 0, 1, Movies.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

@@ -57,6 +57,7 @@ public class MovieDBFactoryImpl extends EFactoryImpl implements MovieDBFactory {
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
 			case MovieDBPackage.SERIES: return createSeries();
+			case MovieDBPackage.MOVIES: return createMovies();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -70,6 +71,16 @@ public class MovieDBFactoryImpl extends EFactoryImpl implements MovieDBFactory {
 	public Series createSeries() {
 		SeriesImpl series = new SeriesImpl();
 		return series;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Movies createMovies() {
+		MoviesImpl movies = new MoviesImpl();
+		return movies;
 	}
 
 	/**

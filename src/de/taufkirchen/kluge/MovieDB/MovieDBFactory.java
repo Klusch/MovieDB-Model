@@ -31,6 +31,15 @@ public interface MovieDBFactory extends EFactory {
 	Series createSeries();
 
 	/**
+	 * Returns a new object of class '<em>Movies</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Movies</em>'.
+	 * @generated
+	 */
+	Movies createMovies();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
