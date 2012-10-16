@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<component name="tsip-loginService" immediate="true">
+<component name="modelService" immediate="true">
     <implementation class="de.taufkirchen.kluge.service.impl.ModelProviderImpl"/>
-<!-- 
+ 
     <service>
-        <provide interface="com.cassidian.tdb.loginservice.service.TSIPLoginService"/>
+        <provide interface="de.taufkirchen.kluge.service.ModelProvider"/>
     </service>
-
-    <reference name="tsip-moduleService"
-        interface="com.cassidian.tdb.moduleservice.services.ModuleService"
+    
+<!--
+    <reference name="other-moduleService"
+        interface="de.taufkirchen.kluge.moduleservice.services.ModuleService"
         bind="setModuleService"
         unbind="unsetModuleService"
         cardinality="1..1"
     />  
 
-    <reference name="tsip-modelService"
-        interface="com.cassidian.tdb.modelservice.service.TSIPModelService"
+    <reference name="other-modelService"
+        interface="de.taufkirchen.kluge.modelservice.service.TSIPModelService"
         bind="setModelService"
         unbind="unsetModelService"
         cardinality="1..1"
